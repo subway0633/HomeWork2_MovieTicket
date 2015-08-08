@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DiscountLibrary
 {
-    public class VipDiscount : IDiscount
+    public class KidDiscount2 : IDiscount
     {
         public override string ToString()
         {
-            string s = string.Format("電影票五折優惠");
+            string s = string.Format("電影票七折優惠");
             return s;
         }
 
         public double setDiscount(double price)
         {
-            double p = price * 0.5;
+            double p = price * 0.7;
             return p;
         }
     }

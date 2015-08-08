@@ -51,8 +51,10 @@
     <Compile Include="AllTicket.cs" />
     <Compile Include="IDiscount.cs" />
     <Compile Include="KidDiscount.cs" />
+    <Compile Include="KidDiscount2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentDiscount.cs" />
+    <Compile Include="StudentDiscount2.cs" />
     <Compile Include="VipDiscount.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

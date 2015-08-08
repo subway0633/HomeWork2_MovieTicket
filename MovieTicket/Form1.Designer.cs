@@ -36,10 +36,9 @@
             this.lblTicket = new System.Windows.Forms.Label();
             this.btnPayMoney = new System.Windows.Forms.Button();
             this.txtTicket = new System.Windows.Forms.TextBox();
-            this.txtDicount = new System.Windows.Forms.TextBox();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblMovieTicket = new System.Windows.Forms.Label();
-            this.chb3D = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // cmbDiscountList
@@ -48,7 +47,9 @@
             this.cmbDiscountList.FormattingEnabled = true;
             this.cmbDiscountList.Items.AddRange(new object[] {
             "學生",
+            "大學生",
             "小孩",
+            "小屁孩",
             "VIP"});
             this.cmbDiscountList.Location = new System.Drawing.Point(36, 125);
             this.cmbDiscountList.Margin = new System.Windows.Forms.Padding(4);
@@ -133,15 +134,15 @@
             this.txtTicket.Size = new System.Drawing.Size(200, 33);
             this.txtTicket.TabIndex = 9;
             // 
-            // txtDicount
+            // txtDiscount
             // 
-            this.txtDicount.Enabled = false;
-            this.txtDicount.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDicount.Location = new System.Drawing.Point(580, 122);
-            this.txtDicount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtDicount.Name = "txtDicount";
-            this.txtDicount.Size = new System.Drawing.Size(182, 33);
-            this.txtDicount.TabIndex = 10;
+            this.txtDiscount.Enabled = false;
+            this.txtDiscount.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDiscount.Location = new System.Drawing.Point(580, 122);
+            this.txtDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(182, 33);
+            this.txtDiscount.TabIndex = 10;
             // 
             // lblAmount
             // 
@@ -165,25 +166,13 @@
             this.lblMovieTicket.TabIndex = 8;
             this.lblMovieTicket.Text = "電影票價:";
             // 
-            // chb3D
-            // 
-            this.chb3D.AutoSize = true;
-            this.chb3D.Location = new System.Drawing.Point(41, 45);
-            this.chb3D.Name = "chb3D";
-            this.chb3D.Size = new System.Drawing.Size(45, 21);
-            this.chb3D.TabIndex = 11;
-            this.chb3D.Text = "3D";
-            this.chb3D.UseVisualStyleBackColor = true;
-            this.chb3D.CheckedChanged += new System.EventHandler(this.chb3D_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 531);
-            this.Controls.Add(this.chb3D);
             this.Controls.Add(this.lblMovieTicket);
-            this.Controls.Add(this.txtDicount);
+            this.Controls.Add(this.txtDiscount);
             this.Controls.Add(this.txtTicket);
             this.Controls.Add(this.btnPayMoney);
             this.Controls.Add(this.btnAddList);
@@ -213,10 +202,9 @@
         private System.Windows.Forms.Label lblTicket;
         private System.Windows.Forms.Button btnPayMoney;
         private System.Windows.Forms.TextBox txtTicket;
-        private System.Windows.Forms.TextBox txtDicount;
+        private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lblMovieTicket;
-        private System.Windows.Forms.CheckBox chb3D;
     }
 }
 

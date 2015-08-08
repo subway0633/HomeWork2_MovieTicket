@@ -10,7 +10,7 @@ namespace DiscountLibrary
     {
         public override string ToString()
         {
-            string s = string.Format("學生打八折");
+            string s = string.Format("電影票九折優惠");
             return s;
         }
 
