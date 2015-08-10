@@ -29,14 +29,14 @@ namespace MovieTicket
             //Student = new StudentDiscount();
             //Vip = new VipDiscount();
             //Kid = new KidDiscount();
-            Ticket.Price = TicketMoney;
         }
 
         private void cmbDiscountList_SelectedIndexChanged(object sender, EventArgs e)
         {
             string config;
 
-            //將票價固定在TicketMoney
+            //將票價固定在TicketMoney,以免重新選擇時，價格被改變
+            Ticket.Price = TicketMoney;
 
             switch (cmbDiscountList.SelectedIndex)
             {
